@@ -13,7 +13,7 @@ class Chinese_character:
         self.rank=rank
         #self.next_count=0 #这是为了转移矩阵最后得到概率而不是个次数，其实好像不需要，直接sum(一行即可)
     def __repr__(self):
-        print('{}的拼音是{},频率是{},是第{}个字'.format(self.name, self.pinyin, self.frequency, self.rank))
+        return '{}的拼音是{},频率是{},是第{}个字'.format(self.name, self.pinyin, self.frequency, self.rank)
 
 class Analyzer:
     def __init__(self):
