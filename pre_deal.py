@@ -99,8 +99,3 @@ if __name__ == "__main":
 # print(analyzer.ch_dic["大"].frequency)
 # print(analyzer.transition.loc["大","家"])
 # print(len(analyzer.states))
-
-
-
-
-
