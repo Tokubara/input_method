@@ -35,7 +35,7 @@ class Analyzer:
         '''
         pin_dict:字典，key:拼音，比如'an'，value:这个拼音的所有汉字(由文件拼音汉字表给出)，这个在初始化后就不变了
         states:汉字列表，由文件一二级汉字表给出，一二级汉字表是按照频率排序的
-        transition:dataframe，其中横和列都是汉字，用起来和矩阵一样，相当于一个有名字的矩阵(R中的矩阵本来就可以有名字)，转移矩阵
+        transition:矩阵，其中横和列都是汉字，用起来和矩阵一样，相当于一个有名字的矩阵(R中的矩阵本来就可以有名字)，转移矩阵
         ch_dict:字典，key:汉字，字符串，比如'阿'，value:此汉字对应的Chinese_character对象，与pin_dict不同，ch_dict会根据语料变化
         path:str，是资源文件的路径
         storage_path:是存储中间得到的字典文件的路径
